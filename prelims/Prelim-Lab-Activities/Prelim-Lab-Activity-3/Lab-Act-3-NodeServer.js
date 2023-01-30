@@ -6,33 +6,13 @@
 
 //
 
-var http = require('http');
+var http = require('http'); // 1 - Import Node.js core module
+
 var server = http.createServer(function (req, res) {
-  //root
-
-  response.end('Welcome to my Node.js Application\n');
-
-  //about
-
-  response.end('This is the about page \n');
-
-  //contact
-
-  response.end(
-    'Zac Carreon, if you want additional details about this activity go to this site: https://www.tutorialsteacher.com/node.js/node.js-tutorials \n'
-  );
-
-  //gallery
-
-  response.end('This is the gallery page\n');
-
-  //non-existing route
-
-  response.end('Invalid Request \n');
-
-
-  
+  // 2 - creating server
+  //handle incoming requests here...
 });
-server.listen(5000);
 
-console.log('Server running at http://127.0.0.1:5000/');
+server.listen(5000); //3 - listen for any incoming requests
+
+console.log('Node.js web server at port 5000 is running..');

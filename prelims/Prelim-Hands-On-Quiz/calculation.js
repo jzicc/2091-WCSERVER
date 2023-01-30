@@ -1,4 +1,4 @@
-(function calculate() {
+(function calculation() {
   var rph,
     hrsWorked,
     gWeek,
@@ -35,4 +35,4 @@
   //The Net Salary
   netSal = gross - totalDeduc;
 });
-module.exports = calculate;
+module.exports = calculation;

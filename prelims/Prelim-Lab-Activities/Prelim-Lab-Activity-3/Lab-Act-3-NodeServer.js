@@ -8,10 +8,14 @@
 
 var http = require('http');
 var server = http.createServer(function (req, res) {
-  //
+  //root
 
   response.writeHead(200, { 'Content-Type': 'text/plain' });
-  response.end('Hello World\n');
+  response.end('Welcome to my Node.js Application\n');
+
+  //about
+  response.writeHead(200, { 'Content-Type': 'text/plain' });
+  response.end('This is the about page \n');
 });
 server.listen(5000);
 

@@ -10,6 +10,7 @@ var server = http.createServer(function (req, res) {
   // creating server
 
   //handle incoming requests here...
+
   if (req.url == '/') {
     //check the URL of the current request
 

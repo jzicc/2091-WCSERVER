@@ -42,6 +42,6 @@ var server = http.createServer(function (req, res) {
   } else res.end('Invalid Request: ');
 });
 
-server.listen(5001);
+server.listen(5000);
 
-console.log('Node.js web server at port 5001 is running..');
+console.log('Node.js web server at port 5000 is running..');
